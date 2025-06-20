@@ -4,30 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Illinois State Roleplay Rules</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-
   <style>
-    /* Reset & base */
     * {
       box-sizing: border-box;
     }
     body {
       margin: 0;
-      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #121212, #1c1c1c);
       color: #ddd;
       display: flex;
       min-height: 100vh;
+      gap: 2rem;
     }
-
-    /* Sidebar */
     nav {
       width: 260px;
       background: linear-gradient(135deg, #0f0f0f, #222222);
       box-shadow: 2px 0 12px rgba(0,0,0,0.85);
-      padding: 1.5rem 1rem;
+      padding: 2rem 1.2rem;
       position: sticky;
       top: 0;
       height: 100vh;
@@ -35,165 +30,122 @@
       flex-direction: column;
       border-radius: 0 24px 24px 0;
       border: 2px solid;
-      border-image-slice: 1;
-      border-width: 2px;
-      border-image-source: linear-gradient(135deg, #000, #555);
+      border-image: linear-gradient(135deg, #000, #555) 1;
     }
-nav h2 {
-  color: #7b5cff;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  letter-spacing: 1.5px;
-  font-size: 1.7rem;
-  text-align: center;
-  text-shadow: none;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-nav a {
-  text-decoration: none;
-  color: #aaa;
-  font-weight: 600;
-  padding: 0.7rem 1.2rem;
-  border-radius: 12px;
-  transition: all 0.25s ease;
-  user-select: none;
-  border: 2px solid transparent;
-  box-shadow: 0 0 3px #000 inset;
-  backdrop-filter: saturate(180%) blur(8px);
-  background: linear-gradient(145deg, #121212, #222);
-}
-nav a:hover,
-nav a:focus {
-  color: #7b5cff;
-  background: linear-gradient(145deg, #2a1a66, #3e2ab8);
-  border-image-slice: 1;
-  border-image-source: linear-gradient(135deg, #7b5cff, #5a3acc);
-  border-width: 2px;
-  box-shadow: none;
-  outline: none;
-}
-
-/* Main content */
-main {
-  flex-grow: 1;
-  padding: 2rem 3rem;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  max-width: 1000px;
-  margin: auto;
-  border-radius: 24px;
-  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
-  box-shadow: 0 0 20px rgba(123, 92, 255, 0.25);
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(135deg, #000, #666);
-}
-
-header {
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 900;
-  margin-bottom: 2rem;
-  letter-spacing: 3px;
-  color: #7b5cff;
-  text-shadow: none;
-}
-
-/* Search box */
-.search-box {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.search-box input {
-  width: 60%;
-  max-width: 400px;
-  padding: 14px 20px;
-  border-radius: 30px;
-  border: 2px solid #7b5cff;
-  background: #222;
-  color: #ddd;
-  font-size: 1.1rem;
-  box-shadow: inset 0 0 10px #000;
-  transition: background 0.3s ease, border-color 0.3s ease;
-}
-.search-box input:focus {
-  background: #111;
-  outline: none;
-  border-color: #9a7fff;
-  box-shadow: none;
-  color: #9a7fff;
-}
-
-/* Section styling */
-section {
-  margin-bottom: 4rem;
-  padding: 2rem 2.5rem;
-  border-radius: 24px;
-  background: linear-gradient(145deg, #222, #111);
-  box-shadow: 0 0 15px rgba(123, 92, 255, 0.3);
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(135deg, #000, #555);
-  transition: box-shadow 0.3s ease;
-}
-section:hover {
-  box-shadow: 0 0 25px rgba(123, 92, 255, 0.5);
-}
-section h3 {
-  font-weight: 800;
-  font-size: 2rem;
-  color: #7b5cff;
-  margin-bottom: 1.25rem;
-  border-bottom: 3px solid #7b5cff;
-  padding-bottom: 0.3rem;
-  letter-spacing: 1.2px;
-}
-
-/* Tables */
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 0.9rem;
-  font-size: 1rem;
-  color: #ccc;
-  user-select: none;
-}
-th,
-td {
-  text-align: left;
-  padding: 16px 24px;
-  background: #2a2a2a;
-  border-radius: 16px;
-  box-shadow: inset 0 0 12px #000;
-  transition: background 0.3s ease;
-}
-th {
-  background: #7b5cff;
-  color: #121212;
-  font-weight: 700;
-  box-shadow: none;
-}
-tr:hover td {
-  background: #333;
-  cursor: default;
-}
-    /* Punishment colors */
+    nav h2 {
+      color: #7b5cff;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #aaa;
+      font-weight: 600;
+      padding: 1rem 1.4rem;
+      border-radius: 12px;
+      transition: all 0.25s ease;
+      user-select: none;
+      background: linear-gradient(145deg, #121212, #222);
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #7b5cff;
+      background: linear-gradient(145deg, #2a1a66, #3e2ab8);
+    }
+    main {
+      flex-grow: 1;
+      padding: 3rem 3.5rem;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      max-width: 1000px;
+      margin: auto;
+      border-radius: 24px;
+      background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+      box-shadow: 0 0 20px rgba(123, 92, 255, 0.25);
+      border: 2px solid;
+      border-image: linear-gradient(135deg, #000, #666) 1;
+    }
+    header {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 900;
+      margin-bottom: 2.5rem;
+      color: #7b5cff;
+    }
+    .search-box {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .search-box input {
+      width: 60%;
+      max-width: 400px;
+      padding: 14px 20px;
+      border-radius: 30px;
+      border: 2px solid #7b5cff;
+      background: #222;
+      color: #ddd;
+      font-size: 1.1rem;
+    }
+    .search-box input:focus {
+      background: #111;
+      outline: none;
+      border-color: #9a7fff;
+      color: #9a7fff;
+    }
+    section {
+      margin-bottom: 5rem;
+      padding: 2.5rem 2.5rem;
+      border-radius: 24px;
+      background: linear-gradient(145deg, #222, #111);
+      box-shadow: 0 0 15px rgba(123, 92, 255, 0.3);
+      border: 2px solid;
+      border-image: linear-gradient(135deg, #000, #555) 1;
+    }
+    section h3 {
+      font-weight: 800;
+      font-size: 2.2rem;
+      color: #7b5cff;
+      margin-bottom: 1.75rem;
+      border-bottom: 3px solid #7b5cff;
+      padding-bottom: 0.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 1rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 16px 24px;
+      background: #2a2a2a;
+      border-radius: 16px;
+      box-shadow: inset 0 0 12px #000;
+    }
+    th {
+      background: #7b5cff;
+      color: #121212;
+      font-weight: 700;
+    }
+    tr:hover td {
+      background: #333;
+    }
     .warning { color: #f9d423; font-weight: 600; }
     .kick { color: #f08a5d; font-weight: 600; }
     .ban-short { color: #f85f73; font-weight: 700; }
     .ban-long { color: #b00020; font-weight: 700; }
-
-    /* Scrollbar */
     main::-webkit-scrollbar {
       width: 10px;
     }
@@ -202,44 +154,31 @@ tr:hover td {
       border-radius: 10px;
     }
     main::-webkit-scrollbar-thumb {
-      background: #00d1b2;
+      background: #7b5cff;
       border-radius: 10px;
     }
-
-    /* Responsive */
     @media (max-width: 900px) {
       body {
         flex-direction: column;
+        gap: 0;
       }
       nav {
         width: 100%;
         height: auto;
-        padding: 1rem;
+        padding: 1.5rem;
         flex-direction: row;
         overflow-x: auto;
         border-radius: 0 0 24px 24px;
-        border: 2px solid;
-        border-image-slice: 1;
-        border-width: 2px;
-        border-image-source: linear-gradient(135deg, #000, #555);
       }
       nav ul {
         flex-direction: row;
         gap: 1rem;
       }
       main {
-        padding: 1rem 1.5rem;
+        padding: 2rem 1.5rem;
         max-width: 100%;
         margin: 0;
         border-radius: 0;
-        border: none;
-        box-shadow: none;
-      }
-      section {
-        padding: 1rem 1.2rem;
-        border-radius: 0;
-        box-shadow: none;
-        border: none;
       }
     }
   </style>
@@ -248,19 +187,19 @@ tr:hover td {
   <nav>
     <h2>Navigation</h2>
     <ul>
-      <li><a href="#in-game" tabindex="1">In-Game Rules</a></li>
-      <li><a href="#discord" tabindex="2">Discord Rules</a></li>
+      <li><a href="#in-game">In-Game Rules</a></li>
+      <li><a href="#discord">Discord Rules</a></li>
     </ul>
   </nav>
   <main>
     <header>ILLINOIS STATE ROLEPLAY RULES</header>
     <div class="search-box">
-<input id="ruleSearch" type="text" placeholder="Search rules..." />
+      <input id="ruleSearch" type="text" placeholder="Search rules..." />
     </div>
 
-    <section id="in-game" tabindex="0">
+    <section id="in-game">
       <h3>In-Game Rules</h3>
-      <table id="inGameTable" aria-describedby="in-game">
+      <table id="inGameTable">
         <thead>
           <tr>
             <th>Offense</th>
@@ -287,9 +226,9 @@ tr:hover td {
       </table>
     </section>
 
-    <section id="discord" tabindex="0">
+    <section id="discord">
       <h3>Discord Rules</h3>
-      <table id="discordTable" aria-describedby="discord">
+      <table id="discordTable">
         <thead>
           <tr>
             <th>Rule</th>
@@ -311,8 +250,6 @@ tr:hover td {
       </table>
     </section>
   </main>
-
-  <!-- JS -->
   <script src="search.js"></script>
 </body>
 </html>
